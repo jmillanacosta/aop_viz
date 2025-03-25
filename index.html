@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Molecular AOP visualization</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Cytoscape.js -->
+    <script src="/js/cytoscape.min.js"></script>
+    <!-- Our scripts. TODO: Add additional scripts if needed -->
+    <script src="js/aop_styles.js"></script>
+    <script src="js/aop_elements.js"></script>
+    <script src="js/node_table.js"></script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div class="cy_div">
+            <section>
+                <h2>
+                    Molecular Adverse Outcome Pathway
+                </h2>
+                <!-- Find and edit the code for buttons in aop_elements.js -->
+                <button id="reset_layout" class="btn btn-secondary">Reset Layout</button>
+                <button id="see_genes" class="btn btn-secondary">See Genes</button>
+                <button id="download_network" class="btn btn-secondary">Download Cytoscape Network</button>
+                <div id="cy">
+                </div>
+            </section>
+        </div>
+        <!-- node_table will contain the dynamically populated node info table -->
+        <div id="node_table_div" class="data-section">
+            <div class="node_table">
+                <table class="table" id="qaop_table">
+                    <thead>
+                        <!-- Set column names here -->
+                        <tr>
+                            <th>column 1</th>
+                            <th>column 2</th>
+                            <th>column 3</th>
+                            <!-- Add more -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
