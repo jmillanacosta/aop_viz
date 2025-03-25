@@ -11,7 +11,7 @@ Cytoscape-based visualization app for molecular Adverse Outcome Pathways (AOPs).
 
 ## Getting started
 
-1. Fork or create a branch. Open `index.html` in a browser to view the app.
+1. Fork or create a branch. Open `index.html` in a browser to view the app. Get started with the [issues](https://github.com/jmillanacosta/aop_viz/issues)
 2. Modify the JavaScript files to complete the functionality according to the issue tracker.
 3. Can you think about new functionalities? Write your own issues and implement them.
 
